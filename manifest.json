@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Meta AI Bulk Video Generator",
+  "version": "1.0.0",
+  "description": "Bulk generate videos on Meta AI Media with prompts and image linking.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://www.meta.ai/*","https://meta.ai/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Bulk Video Generator"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.meta.ai/*","https://meta.ai/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

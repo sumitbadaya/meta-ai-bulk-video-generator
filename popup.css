@@ -1,0 +1,137 @@
+.container {
+  width: 380px;
+  padding: 14px;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 13px;
+  color: #1a1a1a;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.hint {
+  margin: 0 0 12px;
+  color: #666;
+  font-size: 12px;
+}
+
+.hint a {
+  color: #0866ff;
+  text-decoration: none;
+}
+
+.hint a:hover {
+  text-decoration: underline;
+}
+
+label {
+  display: block;
+  margin: 10px 0 4px;
+  font-weight: 500;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #0866ff;
+  box-shadow: 0 0 0 2px rgba(8, 102, 255, 0.2);
+}
+
+.prompt-count {
+  margin-top: 4px;
+  font-size: 11px;
+  color: #666;
+}
+
+.image-upload-area {
+  margin: 8px 0;
+}
+
+#imageInput {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.image-list {
+  margin: 6px 0;
+  max-height: 80px;
+  overflow-y: auto;
+}
+
+.image-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+  font-size: 12px;
+}
+
+.image-item img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.image-item input[type="number"] {
+  width: 48px;
+  padding: 4px 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.image-mapping {
+  font-size: 11px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.primary {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background: #0866ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primary:hover {
+  background: #0652cc;
+}
+
+.primary:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 12px;
+  min-height: 18px;
+}
+
+.status.error {
+  color: #b32d2e;
+}
+
+.status.success {
+  color: #0d6832;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bulk Video Generator</h1>
+    <p class="hint">Use on <a href="https://www.meta.ai/media" target="_blank">meta.ai/media</a>. One prompt per block (separate with a blank line).</p>
+
+    <label for="prompts">Prompts (blank line = next prompt)</label>
+    <textarea id="prompts" rows="6" placeholder="First video prompt&#10;&#10;Second video prompt&#10;&#10;Third video prompt"></textarea>
+    <div class="prompt-count" id="promptCount"></div>
+
+    <label>Images (optional) – number = prompt index</label>
+    <div class="image-upload-area">
+      <input type="file" id="imageInput" accept="image/*" multiple>
+      <div class="image-list" id="imageList"></div>
+      <div class="image-mapping" id="imageMapping"></div>
+    </div>
+
+    <button type="button" id="generateBtn" class="primary">Generate videos</button>
+    <div class="status" id="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
